@@ -27,6 +27,11 @@ staticfiles/
 .vscode/
 *.suo
 *.ntvs*
-*.njsproj
-*.sln
 *.sw?
+
+# Node modules & Next.js cache
+node_modules/
+.next/
+dist/
+build/
+

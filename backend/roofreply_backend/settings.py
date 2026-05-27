@@ -175,6 +175,7 @@ CELERY_TIMEZONE = 'UTC'
 if 'test' in sys.argv or 'test_coverage' in sys.argv:
     CELERY_TASK_ALWAYS_EAGER = True
     CELERY_TASK_EAGER_PROPAGATES = True
+    CELERY_RESULT_BACKEND = 'cache+memory://'
 
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY', '')
 TWILIO_ACCOUNT_SID = os.getenv('TWILIO_ACCOUNT_SID', '')
